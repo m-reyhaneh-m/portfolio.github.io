@@ -1,0 +1,26 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>plaes enter your name </h3>
+    <input type="text" id="i1">
+    <button id="b1">select</button>
+    <p id="demo"></p>
+</body>
+<script>
+    var select = document.getElementById("b1");
+    var type = document.getElementById("i1");
+    var para = document.getElementById("demo");
+    select.addEventListener("click", function () {
+        if (type.value === null) {
+        para.value="Plaes enter name"
+        }
+    })
+</script>
+
+</html>
